@@ -65,9 +65,9 @@ require_command "tmux"
 
 tmux new-session -d -c /home/vivek/typography-react-ts/ 
 tmux send-keys "npx vitest" Enter
-tmux new-window -d  -c /home/vivek/typography-react-ts/
+tmux new-window -d -c /home/vivek/typography-react-ts/
 tmux send-keys -t 1 "npx tsc -b --watch" Enter
-tmux new-window -d 
+tmux new-window -d -c /home/vivek/typography-react-ts/
 tmux new-session -d -c /home/vivek/typography-react-ts/ 
 tmux send-keys "npm run dev -- --host" Enter
 
